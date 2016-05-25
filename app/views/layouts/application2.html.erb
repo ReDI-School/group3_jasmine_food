@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>food  Online Store</title>
+  <%= stylesheet_link_tag    "application", media: "all",
+    "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= controller.controller_name %>">
+  <div id="banner">
+    <%= image_tag("logo.jpg") %>
+    <%= @page_title || "Jasmin Restaurant  " %>
+  </div>
+
+<div id="main">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titel:</strong>
+  <%= @product.titel %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @product.image_url %>
+<img src="<%=@product.image_url%>" alt="products image">
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>stock_level:</strong>
+  <%= @product.stock_level %>
+</p>
+
+<p>
+  <strong>provider:</strong>
+  <%= @product.provider %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+<br>
+
+<% if @next_product %>
+<%= button_to "next_product",  product_path(@next_product), :method => :get %> |
+<%  end %>
+<% if @last_product %>
+<%= button_to "last_product",  product_path(@last_product), :method => :get %>
+<%  end %>

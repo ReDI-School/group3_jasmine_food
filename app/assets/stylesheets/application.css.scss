@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will
+ * include all the files listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins, if any,
+ * can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the top of the compiled file, but it's generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ .depot_form {
+   fieldset {
+     background: #FFE7E7;
+   legend {
+     color: #dfd;
+     background: #420005;
+     font-family: sans-serif;
+     padding: 0.2em 1em;
+   }
+ }
+ form {
+   label {
+     width: 5em;
+     float: left;
+     text-align: right;
+     padding-top: 0.2em;
+     margin-right: 0.1em;
+     display: block;
+    }
+   select, textarea, input {
+     margin-left: 0.5em;
+   }
+ .submit {
+   margin-left: 4em;
+  }
+    br {
+     display: none
+     }
+   }
+ }
+
+#banner {
+  background: #A14D4D;
+  padding: 21px;
+  border-bottom: 5px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #301111;
+  text-align: center;
+
+  img {
+    float: left;
+    width: 75px;
+    margin-top: -10px;
+
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  background: #A14D4D;
+
+  #main {
+    margin-left: 13em;
+    padding: 1em;
+    background: white;
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 7em;
+    background: #A14D4D;
+
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: #0A0000;
+          font-size: small;
+        }
+      }
+    }
+  }
+}
